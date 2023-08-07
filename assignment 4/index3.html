@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function power(a,b){
+    alert(Math.pow(a,b)+" square of given input")
+}
+power(9,3)//9 ka  square || 1st value ka square
+
+
+
+
+
+function marks(tot){
+    let maths=+prompt("enter marks of maths subj out of 100")
+    let physics=+prompt("enter marks of physics subj out of 100")
+    let computer=+prompt("enter marks of comp subj out of 100")
+    
+    let per=((maths+physics+computer)/tot)*100
+    let ave=((maths+physics+computer)/tot)
+    alert("percentage is"+Math.round(per))
+    alert("average is"+ave.toFixed(2))
+}
+marks(300)
+
+function ye(){
+    let year=+prompt("enter year")
+    if(year%4===0){
+        alert(year+"is leap year")
+    }
+    else{
+        alert("its not a leap year")
+    }
+
+}
+ye();
+function som(a,b,c){
+ 
+  let S = ( a + b + c ) / 2
+
+ let area = S*(S - a)*(S - b)*(S - c)
+alert("area of triangle is given by "+area)
+
+
+}
+som(5,9,8)
+
+
+function vowel(){
+    let sentence="this is me";
+    let j= ["a","e","i","o","u"];
+
+    for(i=0;i<sentence.length;i++)
+    {
+        if(i=sentence.include(j)){
+
+        }
+    }
+}
+
+
+
+
+
+function chara(){
+    let char="CHARACTER";
+    let i=char.charAt(4)+char.indexOf("R")
+    alert(i)
+}
+chara();
+
+
+function vowel(){
+    let vo=[a,e,i,o,u]
+    for(i=0;i<vo.length;i++){
+        alert(vo)
+    }
+
+}
+    </script>
+</body>
+</html>

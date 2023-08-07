@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+        let a = new Date();
+         let b=a.getHours()+a.getMinutes()+a.getSeconds();
+         alert(a+b);
+
+
+          let c=["jan","feb","mar","apri","may","june","july","auguest","sep","oct","nov","dec"];
+         alert(c[a.getMonth()])
+
+        let d = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+     alert(d[a.getDay()])
+         let check = prompt("Enter day")
+     if (check.toLowerCase() === d[0] || check.toLowerCase() === d[6]) {
+             alert("its fun day")
+         }
+
+
+         let dayscheck = prompt("Enter date")
+ if(dayscheck<=15){
+     alert("First fifteen days of the month") }
+ else if(dayscheck>=15){
+     alert("Last days of the month")
+ }
+
+
+let e=new Date().getTime();
+alert((e/1000)+"millisec in a sec"+"\n"+(e/1000*60*60)+"min");
+
+
+let g=new Date
+let f=g.getHours();
+if(f>12){
+  alert("its pm")
+}
+else if(f<12){
+  alert("its am")
+}
+
+let i=new Date(2020+c[11]+31)
+alert(i)
+
+
+let n=new Date(2015,5,18);
+let m=new Date();
+let o=m-n;
+ let q=Math.floor(o/(1000*60*60*24))
+ alert(q+("days past since 1st RamadanN"))
+
+let r=new Date(2015+c[11]+d[5]);
+let s=new Date(2015+c[0]+d[0])
+let t=r-s/(1000)
+alert(r+Math.floor(t)+s)
+
+
+
+let u=new Date()
+let v=u.getHours();
+let y=u.getHours()+1;
+alert(v+"hours"+"\n"+y+"hours")
+
+let pro=+prompt("Enter your birth year?")
+let ne=new Date()
+let year=ne.getFullYear()
+let bir=year-pro
+alert("your age is"+bir)
+
+let cr=new Date(2015+c[11]+5)
+let cre=new Date(1915+c[11]+5)
+alert(cr+cr.getDay()+"\n"+"100 years back"+cre+cre.getDay())
+
+let se=new Date(2015+c[11]+5)
+let sec=se.getTime()
+//alert(sec)
+let set=new Date()
+let time=set.getTime();
+//alert(time)
+alert(sec-time/(1000*60)+"sec has been pased since"+se)
+
+
+let name=prompt("costumer name")
+let month=prompt("Current month name")
+let units=+prompt("No.of units")
+let charges=+prompt("Charges per unit")
+alert("net amount (within due date)"+units*charges);
+let payment=350;
+alert("gross amount payable (after due date)"+net+payment);
+
+
+
+ </script>
+</body>
+</html>
